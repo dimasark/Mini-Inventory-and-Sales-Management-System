@@ -35,10 +35,12 @@ defined('BASEPATH') OR exit('');
                             <option value="code-ASC">Item Code (Ascending)</option>
                             <option value="unitPrice-DESC">Unit Price (Highest first)</option>
                             <option value="quantity-DESC">Quantity (Highest first)</option>
+                            <option value="gudang-DESC">Gudang (Highest first)</option>
                             <option value="name-DESC">Item Name (Z-A)</option>
                             <option value="code-DESC">Item Code (Descending)</option>
                             <option value="unitPrice-ASC">Unit Price (lowest first)</option>
                             <option value="quantity-ASC">Quantity (lowest first)</option>
+                            <option value="gudang-ASC">Gudang (lowest first)</option>
                         </select>
                     </div>
 
@@ -83,6 +85,15 @@ defined('BASEPATH') OR exit('');
                                 <input type="text" id="itemName" name="itemName" placeholder="Item Name" maxlength="80"
                                     class="form-control" onchange="checkField(this.value, 'itemNameErr')">
                                 <span class="help-block errMsg" id="itemNameErr"></span>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-sm-12 form-group-sm">
+                                <label for="noGudang">No. Gudang</label>
+                                <input type="text" id="noGudang" name="noGudang" placeholder="Item Name" maxlength="80"
+                                    class="form-control">
+                                <span class="help-block errMsg" id="noGudangErr"></span>
                             </div>
                         </div>
 

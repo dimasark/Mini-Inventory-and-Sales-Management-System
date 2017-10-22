@@ -79,6 +79,7 @@ CREATE TABLE `items` (
   `description` text,
   `unitPrice` decimal(10,2) NOT NULL,
   `quantity` int(6) NOT NULL,
+  `gudang` int(6) NOT NULL,
   `dateAdded` datetime NOT NULL,
   `lastUpdated` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;

@@ -105,7 +105,7 @@ class Items extends CI_Controller{
              * function header: add($itemName, $itemQuantity, $itemPrice, $itemDescription, $itemCode)
              */
             $insertedId = $this->item->add(set_value('itemName'), set_value('itemQuantity'), set_value('itemPrice'), 
-                    set_value('itemDescription'), set_value('itemCode'));
+                    set_value('itemDescription'), set_value('itemCode'), set_value('itemGudang'));
             
             $itemName = set_value('itemName');
             $itemQty = set_value('itemQuantity');

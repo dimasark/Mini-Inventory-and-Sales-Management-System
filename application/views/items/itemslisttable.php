@@ -12,6 +12,7 @@
                     <th>SN</th>
                     <th>ITEM NAME</th>
                     <th>ITEM CODE</th>
+                    <th>NO. GUDANG</th>
                     <th>DESCRIPTION</th>
                     <th>QTY IN STOCK</th>
                     <th>UNIT PRICE</th>
@@ -29,6 +30,7 @@
                     <th class="itemSN"><?=$sn?>.</th>
                     <td><span id="itemName-<?=$get->id?>"><?=$get->name?></span></td>
                     <td><span id="itemCode-<?=$get->id?>"><?=$get->code?></td>
+                    <td><span id="itemGudang-<?=$get->id?>"><?=$get->gudang?></td>
                     <td>
                         <span id="itemDesc-<?=$get->id?>" data-toggle="tooltip" title="<?=$get->description?>" data-placement="auto">
                             <?=word_limiter($get->description, 15)?>
